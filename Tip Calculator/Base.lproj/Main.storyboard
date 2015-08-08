@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8164.2" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8135.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Tip_Calculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="hZf-sm-bbn">
+                                <rect key="frame" x="208" y="28" width="184" height="29"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Tip Calculator" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G0u-2d-xpX">
+                                        <rect key="frame" x="0.0" y="0.0" width="184" height="29"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="184" id="igZ-Xv-3wv"/>
+                                            <constraint firstAttribute="height" constant="29" id="kGL-vH-CDf"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="smD-eZ-aMo">
+                                <rect key="frame" x="209" y="88" width="182" height="21"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="How much is the order?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r6a-0G-OL5">
+                                        <rect key="frame" x="0.0" y="0.0" width="182" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="182" id="Nlg-N4-rGa"/>
+                                            <constraint firstAttribute="height" constant="21" id="ocK-Xs-cGT"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter amount" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5nj-ij-Kjk">
+                                <rect key="frame" x="243" y="133" width="114" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="114" id="Ffn-VQ-Tg3"/>
+                                    <constraint firstAttribute="height" constant="30" id="Op9-zU-IfC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="hUq-SS-sIt">
+                                <rect key="frame" x="263" y="185" width="75" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aYA-yD-1br">
+                                        <rect key="frame" x="0.0" y="0.0" width="75" height="30"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="D8i-TW-xV5"/>
+                                            <constraint firstAttribute="width" constant="75" id="SvW-93-kx2"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
+                                        <state key="normal" title="Calculate"/>
+                                        <connections>
+                                            <action selector="calculateTip:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N0C-Dc-aFK"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="You should tip at least:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XWJ-kn-cqS">
+                                <rect key="frame" x="214" y="247" width="173" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="mkH-df-6P7"/>
+                                    <constraint firstAttribute="width" constant="173" id="o4R-49-zzP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D2U-WA-Ifx">
+                                <rect key="frame" x="243" y="294" width="113" height="71"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="71" id="AT2-VP-fVO"/>
+                                    <constraint firstAttribute="width" constant="113" id="Xsc-iP-4TJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="XWJ-kn-cqS" firstAttribute="top" secondItem="hUq-SS-sIt" secondAttribute="bottom" constant="32" id="3Ix-Kj-SuH"/>
+                            <constraint firstItem="D2U-WA-Ifx" firstAttribute="top" secondItem="XWJ-kn-cqS" secondAttribute="bottom" constant="26" id="4me-aP-mFy"/>
+                            <constraint firstItem="D2U-WA-Ifx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VPe-o0-Oq3"/>
+                            <constraint firstItem="hUq-SS-sIt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eEI-bb-DDv"/>
+                            <constraint firstItem="XWJ-kn-cqS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="grp-Tf-vVk"/>
+                            <constraint firstItem="hZf-sm-bbn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mJI-QT-kIS"/>
+                            <constraint firstItem="5nj-ij-Kjk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mJJ-7N-LoP"/>
+                            <constraint firstItem="5nj-ij-Kjk" firstAttribute="top" secondItem="smD-eZ-aMo" secondAttribute="bottom" constant="24" id="oja-zt-onf"/>
+                            <constraint firstItem="smD-eZ-aMo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="y9w-Oa-bOd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="orderAmountTextField" destination="5nj-ij-Kjk" id="r03-fI-K5u"/>
+                        <outlet property="tipAmountLabel" destination="D2U-WA-Ifx" id="BX1-O1-QhM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="440" y="429"/>
+        </scene>
+    </scenes>
+</document>
